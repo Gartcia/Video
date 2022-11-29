@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.preloader-conteiner{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    z-index: 999;
+    background-color: #030303;
+}
+.video-conteiner{
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+}
+.text-conteiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #030303a1;
+}
+#title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-size: 100px;
+}
+.btn-conteiner{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0px 0px 10px black);
+    cursor: pointer;
+}
+.play{
+    display: inherit;
+    width: 100%;
+    filter: invert(100%);
+    transition: 0.2s;
+}
+.pause{
+    transition: 0.2s;
+    display: none;
+    width: 100%;
+    filter: invert(100%);
+}
+.play:hover, .pause:hover{
+    filter: invert(0%);
+}
+.hide-play{
+    display: none;
+}
+.show-pause{
+    display: inherit;
+    width: 100%;
+    filter: invert(100%);
+}
+.hide-preloader{
+    z-index: -999;
+}

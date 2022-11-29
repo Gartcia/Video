@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Video</title>
+</head>
+<body>
+    <div class="preloader-conteiner">
+        <img src="video/preloader.gif" alt="preloader" class="preloader">
+    </div>
+    <video class="video-conteiner" muted autoplay loop>
+        <source src="video/video.mp4" type="video/mp4">
+    </video>
+    <div class="text-conteiner">
+        <h1 id="title">Try pausing the video!</h1>
+        <button class="btn-conteiner">
+            <img class="btn play" src="video/play.png" alt="play">
+            <img class="btn pause" src="video/pause.png" alt="pause">
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
